@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Quicksand:wght@500&family=Titillium+Web:wght@600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+/* Necesario para que funcione el menú responsive */
+.item.active { display: block; }
+
+@tailwind utilities;
+
+@layer components {
+  .menu-opt {
+    @apply font-open-sans px-4 hidden w-full lg:block lg:w-auto text-center order-3;
+  }
+  .footer-link {
+    @apply font-open-sans hover:border-t hover:border-b hover:border-solid hover:border-links hover:text-links;
+  }
+  .menu-link {
+    @apply hover:border-t hover:border-b hover:border-solid hover:border-links hover:text-links;
+  }
+  .highlight-item {
+    @apply mt-4 mr-4 text-center p-4 bg-corporate-nav-dark text-white lg:text-titles lg:bg-white rounded-md lg:opacity-80 px-4 py-4 mr-12 mb-4;
+  }
+  .h2 {
+    @apply uppercase text-2xl font-bold;
+  }
+}
